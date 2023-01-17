@@ -1,0 +1,363 @@
+:root {
+    --main-fonte: font-family: 'Wallpoet',sans-serif;
+    --main-color2: #ffffff;
+    
+}
+
+#body2{
+    position: relative;
+    font-family: 'Wallpoet',sans-serif;  
+
+}
+
+/* INDEX HEADER */
+
+header img {
+    width: 70px;
+    height: 35px;
+}
+
+
+#buttonblue2, #buttonred2 {
+    padding: 10px;
+    margin-top: 27px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 27px;
+    background-color: transparent;
+    border-radius: 18px;
+  display: inline-block;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1px 1px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+#buttonblue2:hover, #buttonred2:hover{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(2.015);
+    transition: transform 0.3s ease-in-out;
+}
+    
+header {
+    text-transform: uppercase;
+}
+
+/* INDEX MAIN */
+    
+main {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* Entrada dos textos */
+
+.in {
+    height: 100%;
+    margin: 24px 0;
+}
+
+.in textarea {
+    font-family: var(--main-fonte);
+    display: block;
+    margin-bottom: 16px;
+    padding: 0;
+    width: 100%;
+    height: 194px;
+    border: solid;
+    border-radius: 24px;
+    font-size: 30px;
+    color: var(--main-color);
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    text-align:center;
+    text-transform: uppercase;
+    caret-color: #fffb00;
+   }
+
+.in textarea::placeholder {
+    color: var(--main-color);
+}
+
+.in span i {
+    display: inline-block;
+    padding: 2px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background-color: #444;
+    
+}
+
+.in span {
+    font-size: 16px;
+    color: var(--main-color2);
+}
+
+/* Estilos dos Botões */
+
+.buttons {
+    display: block;
+}
+
+.encode, .decode {
+    width: 100%;
+    height: 64px;
+    font-size: 24px;
+    color: var(--main-color);
+    letter-spacing: 1.5px;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 24px;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+    font-family: var(--main-fonte);
+    text-transform: uppercase;
+    border: solid;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.decode {
+    margin-top: 16px;
+    color: var(--main-color);
+    background-color: transparent;
+
+}
+
+.encode:hover, .decode:hover {
+    background-color: var(--main-color);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.015);
+}
+
+/* Saida do texto para o usuario */
+
+.text {
+    width: 100%;
+    font-size: 32px;
+    color: var(--main-color);
+    box-sizing: border-box;
+}
+
+.CaixaMensagem {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    margin: 24px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    padding: 16px;
+    box-sizing: border-box;
+
+}
+
+.CaixaMensagem.full .message {
+    display: none;
+}
+
+.message {
+    width: 80%;
+    margin: 0 auto;
+    word-break: keep-all;
+    text-transform: uppercase;
+}
+
+.message p:active {
+    text-align: center;
+    letter-spacing: 1.5px;
+    color:active var(--main-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.message img {
+    display: none;
+}
+
+.message p:last-child {
+    margin: 16px;
+    color: #00d31c;
+    word-break: keep-all;
+    font-size: 20px;
+    text-align: center;
+}
+
+.CaixaMensagem .copy {
+    display: none; 
+
+}
+
+.CaixaMensagem.full .copy {
+    margin: 24px 0 0;
+    width: 100%;
+    height: 64px;
+    font-size: 24px;
+    color: var(--main-color);
+    border: var(--main-color);
+    letter-spacing: 1.5px;
+    background-color: white;
+    border-radius: 24px;
+    transition: background ease-in-out 200ms;
+    cursor: pointer;
+}
+
+
+.CaixaMensagem.full .copy.trans {
+    animation: trans 1s ease-in-out;
+}
+
+@keyframes trans {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.CaixaMensagem.full .copy:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* estilo do Cabeçario index */
+
+.contact {
+    width: 90%;
+    margin: 32px auto;
+    text-align: center;
+}
+.contact ul li {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.contact ul li svg {
+    width: 40px;
+    transition: ease-in-out 200ms;
+}
+
+.contact ul li svg path {
+    fill: var(--main-color);
+}
+
+.contact ul li svg:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE CSS */
+
+@media screen and (min-width: 768px) {
+    .buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px; 
+    }
+
+    .decode {
+        margin: 0;
+    }
+
+    .CaixaMensagem {
+        min-height: 264px;
+        position: relative;
+    }
+
+    .CaixaMensagem.full .copy {
+        position: absolute;
+        width: 90%;
+        display: inline-block;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+   
+}
+
+@media screen and (min-width: 1280px) {
+    .fields {
+        min-height: 70vh;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: 1fr 80px;
+    }
+
+    .in {
+        margin: 0;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: relative;
+    }
+
+    .in textarea {
+        height: 100%;
+        margin-bottom: 32px;
+    }
+
+    .in span {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .CaixaMensagem.full {
+        margin: 0;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        position: relative;
+       
+    }
+
+    .buttons {
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .CaixaMensagem.full .copy {
+        position: absolute;
+        width: 95%;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-sizing: border-box;
+        transition: ease-in-out 200ms;
+      
+    }
+
+    .message img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact {
+        margin: 64px auto;
+    }
+
+ 
+}
+
