@@ -98,7 +98,7 @@ let keys = {
     n: "*&¨%$"
 }
 let output = document.querySelector('.text')
-let messageModel = '<div class="message"><img src="./imgs/morpheus.png"><p>Nenhuma mensagem encontrada</p><p>Digite um texto que você deseja criptografar ou descriptografar.</p></div>'
+let messageModel = '<div class="message"><img src="./morpheus.png"><p>Nenhuma mensagem encontrada</p><p>Digite um texto que você deseja criptografar ou descriptografar.</p></div>'
 
 let btnEncode = document.querySelector(".encode")
 btnEncode.onclick = encode;
@@ -117,10 +117,10 @@ var button = document.getElementById ("buttonred2");
     var div = document.getElementById("body2");
     var img = document.getElementById("imgcaixa");
 //Altere a imagem do html
-    img.src = "./imgs/iconematrix.png";
+    img.src = "./iconematrix.png";
 // Altere o estilo do elemento
     div.style.color = "#00d31c";
-    div.style.setProperty("background-image", "url('./imgs/matrixred.gif')", "important");
+    div.style.setProperty("background-image", "url('./matrixred.gif')", "important");
  
   });
 
@@ -133,10 +133,10 @@ var button = document.getElementById ("buttonred2");
 var div = document.getElementById("body2");
 var img = document.getElementById("imgcaixa");
 //Altere a imagem do html
-    img.src = "./imgs/matrixicone.png";
+    img.src = "./matrixicone.png";
 // Altere o estilo do elemento
     div.style.color = "black"
-    div.style.setProperty("background-image", "url('./imgs/')", "important");
+    div.style.setProperty("background-image", "url('./')", "important");
  
   });
 
